@@ -4,7 +4,6 @@ const cheerio = require('cheerio');
 const request = require('request');
 
 const bot = new Discord.Client();
-const token = "YOUR TOKEN";
 const PREFIX = "b!";
  
 const fs = require('fs');
@@ -130,4 +129,4 @@ function image(message){
  
 }
 
-bot.login(token);
+bot.login(process.env.BOT_TOKEN);
