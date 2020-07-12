@@ -78,7 +78,7 @@ bot.on('guildMemberAdd', member => {
     channel.send(embed);
 })
 
-// image
+// image function by codelyon
 function image(message){
  
     var options = {
@@ -99,14 +99,15 @@ function image(message){
             return;
         }
  
- 
+        // loads the request
         $ = cheerio.load(responseBody);
  
- 
+        
         var links = $(".image a.link");
  
         var urls = new Array(links.length).fill(0).map((v, i) => links.eq(i).attr("href"));
        
+        //sends every url that we got
         console.log(urls);
  
         if (!urls.length) {
@@ -114,7 +115,7 @@ function image(message){
             return;
         }
  
-        // Send result
+        //randomises the link and send
         message.channel.send( urls[Math.floor(Math.random() * urls.length)]);
 
        
