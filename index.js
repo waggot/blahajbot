@@ -9,6 +9,7 @@ const PREFIX = "b!";
 const fs = require('fs');
 bot.commands = new Discord.Collection();
  
+
 const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
 for(const file of commandFiles){
     const command = require(`./commands/${file}`);
@@ -21,6 +22,9 @@ bot.on('ready', () => {
     bot.user.setActivity('b!help', { type: 'LISTENING'});
 });
  
+
+// commands handler
+
 bot.on('message', message => {
     let args = message.content.substring(PREFIX.length).split(" ");
  
@@ -64,6 +68,14 @@ bot.on('message', message => {
 
         case "dice":
             bot.commands.get('dice').execute(message, args);
+        break;
+
+        case "ikea":
+            bot.commands.get('ikea').execute(message, args);
+        break;
+
+        case "poll":
+            bot.commands.get('poll').execute(message, args);
         break;
     };
 });

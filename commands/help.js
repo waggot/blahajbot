@@ -19,7 +19,9 @@ module.exports = {
         .addField('b!info', 'sends information on the user')
         .addField('b!serverinfo', 'sends information on the discord server')
         .addField('b!botinfo', 'sends information of the bot')
-        .addField('Features', 'Server Greeting/welcome');
+        .addField('b!poll', 'sends a reactable embed message with thumbs up and down to have a poll')
+        .addField('Features', 'Server Greeting/welcome')
+        .addField('Easter Eggs', 'Theres only 1 so far but can you find it?');
         message.channel.send(embed);
     }
 }
