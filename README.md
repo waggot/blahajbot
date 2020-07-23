@@ -11,10 +11,10 @@ First you would need to get a bot key from [Discord Developer portal](https://di
 3. Go to the bottom of `index.js` and replace `YOUR TOKEN` with your discord developer bot key.
 4. Open the terminal and run `node .` to start the bot.
 
-Now that the bot is online, you can invite it to your server with the help of this [link]([https://discordpy.readthedocs.io/en/latest/discord.html])
+Now that the bot is online, you can invite it to your server with the help of this [link](https://discordpy.readthedocs.io/en/latest/discord.html)
 
 ## Contributing
 If you want to contribute please contact me from my [website](https://hohweide.me)
 
 ## License
-[MIT]([https://github.com/waggot/Shark-san-bot/blob/master/LICENSE])
+[MIT](https://github.com/waggot/Shark-san-bot/blob/master/LICENSE)
